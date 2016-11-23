@@ -24,6 +24,8 @@ Plugin 'bling/vim-airline'
 let g:airline#extensions#whitespace#enabled = 0
 " assume terminal emulator has installed and selected powerline compatible
 " fonts
+" https://github.com/powerline/fonts
+" try Meslo
 let g:airline_powerline_fonts = 1
 
 " soft caps lock support
