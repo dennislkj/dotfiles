@@ -143,6 +143,10 @@ call matchadd('ColorColumn', '\%81v',100)
 
 " enable line numbering
 set number
+
+"folding support
+set foldmethod=syntax
+set foldlevelstart=99
 " -----------------------outdated setings-----------------------
 "
 " Fuzzy function definition search
