@@ -11,6 +11,8 @@ set wildmenu
 set showcmd
 " Highlight searches. (use :nohl to turn this off)
 set hlsearch
+" Incremental search
+set incsearch
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -141,8 +143,8 @@ set list
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v',100)
 
-" enable line numbering
-set number
+" enable hybrid line numbering
+set number relativenumber
 
 "folding support
 set foldmethod=syntax
