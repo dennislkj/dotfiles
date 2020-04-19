@@ -21,14 +21,13 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-" status and tabline enhancement
-Plugin 'bling/vim-airline'
-let g:airline#extensions#whitespace#enabled = 0
-" assume terminal emulator has installed and selected powerline compatible
-" fonts
-" https://github.com/powerline/fonts
-" try Meslo
-let g:airline_powerline_fonts = 1
+
+" light statusline plugin"
+Plugin 'itchyny/lightline.vim'
+set noshowmode
+let g:lightline = {
+    \ 'colorscheme': 'darcula',
+    \ }
 
 " soft caps lock support
 Plugin 'tpope/vim-capslock'
@@ -59,6 +58,9 @@ let g:ctrlp_extensions=['tag']
 "Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'dracula/vim'
+
+" * search visual selection instead of word"
+Plugin 'nelstrom/vim-visual-star-search'
 
 " highlight cursor after search jump
 Plugin 'inside/vim-search-pulse'
